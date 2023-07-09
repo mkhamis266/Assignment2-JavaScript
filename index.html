@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <title>Quotes App</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="h-100 d-flex pt-5  align-items-center flex-column gap-5 text-center">
+        <h1 class="title">Quote of the Day</h1>
+        <p class="h4 position-relative caption">Press the button below to receive a random quote!</p>
+        <button onclick="getNewQuote()" class="btn new-quote">New Quote</button>
+        <div class="quote">
+          <p id="quoteTextId" class="quote-text">“Be yourself; everyone else is already taken.”</p>
+          <div class="author text-center">
+            <img id="authorImgId" src="imgs/Oscar Wilde.jpg" class="author-img" alt="Oscar Wilde" />
+            <h4 id="authorNameId" class="author-name">Oscar Wild</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

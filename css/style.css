@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d5b79;
+  color: #fff;
+}
+
+main {
+  height: 100vh;
+}
+.title {
+  padding: 25px;
+  border-radius: 15px;
+  position: relative;
+  border: 5px solid #f3aa60;
+  color: #f3aa60;
+  font-weight: bold;
+  font-size: clamp(4vw, 4rem, 5vw);
+  &::before,
+  &::after {
+    position: absolute;
+    content: "،،";
+    background-color: #1d5b79;
+  }
+  &::before {
+    bottom: -50%;
+    left: 5%;
+    rotate: 180deg;
+  }
+  &::after {
+    top: -50%;
+    right: 5%;
+  }
+}
+.caption {
+  color: #f3aa60;
+}
+
+.new-quote {
+  display: block;
+  background-color: #468b97;
+  font-size: 20px;
+  color: #fff;
+  &:hover {
+    background-color: #ef6262;
+  }
+}
+
+.quote {
+  max-width: 600px;
+  font-size: 24px;
+}
+.quote .author-img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.author-name {
+  position: relative;
+  &::before {
+    content: "--";
+    position: relative;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+  &::before {
+    font-size: 2rem;
+    bottom: -40%;
+    left: 5%;
+  }
+  &::after {
+    font-size: 2rem;
+    top: -40%;
+    right: 5%;
+  }
+}
+}
